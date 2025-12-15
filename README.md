@@ -42,13 +42,23 @@ This work prioritizes conceptual understanding and modeling design rather than p
 
 ## Implementation details
 Custom MATLAB scripts implementing:
-- Forward probability computation
+- A custom function, prrMINE2, was designed and implemented to adapt the classical Forward Algorithm to the specific structure and assumptions of the proposed genomic HMM.
 - Viterbi decoding
 - MATLAB built-in HMM functions (hmmgenerate, hmmviterbi) used only for sequence generation and validation, not as a black- box solution
-Custom visualization:
+## Custom visualization:
 - Heatmaps
 - Probability evolution plots
 - State comparison under different transition matrices
+
+## Results
+The model successfully computes state probability distributions across genomic sequences and provides insight into the most likely hidden state paths.
+
+Results demonstrate how probabilistic modeling can be applied to biological sequence data even under limited data availability, while highlighting the importance of parameter estimation methods for future improvements.
+
+### Current Limitations
+- Transition probabilities were defined heuristically
+- No parameter learning was performed due to lack of sufficient data
+
 ## Author
 Gabriel Garrido Vallet
 ## Authorship:
